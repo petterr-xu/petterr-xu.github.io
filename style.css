@@ -1,0 +1,227 @@
+/*Block style defination*/
+html {
+  font-family: sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  padding: 0 20%;
+}
+
+/*
+div.mainArticle{
+    float: left;
+}
+div.sidebar{
+    float: right;
+}
+*/
+footer {
+  color: gray;
+  font-size: 13px;
+  text-align: center;
+}
+
+header.topMenu {
+  /*background-color: #284d6b;*/
+  background: rgb(8, 50, 83);
+  background: linear-gradient(145deg, rgba(8, 50, 83, 1) 10%, rgb(57, 101, 139) 60%, rgb(57, 101, 139) 100%);
+  padding: 5px calc(10% - 40px) 10px calc(10% - 40px);
+
+}
+
+div.headerTitle {
+  padding: 10px;
+  margin: 10px;
+}
+
+div.headerMain {
+  padding: 0px 10px 0px 10px;
+}
+
+form.search {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+Nav.topNav {
+  /* display: inline-flex; */
+  min-width: 65%;
+}
+
+article {
+  font-family: serif;
+  padding: 0px 0px 10px 0px;
+  background-color: rgb(245, 245, 247);
+}
+
+article p {
+  text-indent: 2em;
+}
+
+/*Href style defination*/
+
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: rgb(6, 4, 126);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a.headHref {
+  font-size: 20px;
+  text-decoration: none;
+  color: seashell;
+}
+
+h1 a.mainPageHref {
+  display: inline-block;
+  font-size: 35px;
+  padding: 0px 0px 10px 0px;
+}
+
+.headerTitle h1 {
+  margin: 0px;
+}
+
+.mainPageHref:hover {
+  color: black;
+}
+
+nav a.headHref {
+  background-color: rgb(82, 136, 180);
+  border: 0px;
+  margin: 1px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 2px;
+  /*border: 2px solid rgb(43, 65, 85);*/
+  border-style: solid;
+  display: inline-block;
+}
+
+nav a.headHref:hover {
+  background-color: rgb(33, 80, 119);
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
+/*Text style defination*/
+
+article h1 {
+  border-left: 1rem solid #215077;
+  background-color: #34648b;
+  /*
+    background: rgb(8,52,87);
+    background: linear-gradient(90deg, rgba(52,100,139,1) 0%, rgba(52,100,139,1) 83%, rgba(8,52,87,1) 100%);
+    */
+  padding: 10px 50px 10px 10px;
+  color: seashell;
+}
+
+article h1.articleTitle {
+  /*
+    background: rgb(8,52,87);
+    background: linear-gradient(90deg, rgba(8,52,87,1) 0%, rgba(52,100,139,1) 20%, rgba(43,90,128,1) 80%, rgba(8,52,87,1) 100%);
+    */
+  border-left: 1rem solid #215077;
+  border-right: 1rem solid #215077;
+}
+
+h1 .mainPageHref {
+  color: seashell;
+  margin: 0px;
+}
+
+.articleTitle {
+  text-align: center;
+}
+
+figcaption.imageDescribtion {
+  color: gray;
+  font-size: 10px;
+}
+
+article>* {
+  font-family: serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+article ul {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+p.logoSaying {
+  font-style: italic;
+  padding: 0px 0px 10px 0px;
+}
+
+/*Table, list, image style defination*/
+
+table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  padding-left: 0px;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(235, 235, 235);
+}
+
+
+tr:nth-child(even) td {
+  background-color: rgb(250, 250, 250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245, 245, 245);
+}
+
+caption {
+  padding: 10px;
+}
+
+.topMenu ul {
+  padding-left: 20%;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+li {
+  font-family: inherit;
+  list-style-type: circle;
+}
+
+.topNav li {
+  list-style: none;
+  width: 130px;
+  height: 60px;
+  display: inline-block;
+}
+
+img.identificationPhoto {
+  object-fit: contain;
+  max-width: 30%;
+
+}
