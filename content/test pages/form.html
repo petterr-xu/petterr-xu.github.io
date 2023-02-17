@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="wenduanXu">
+  <meta name="destribtion" content="This webpage is Dan's personal webpage.Version number 0.0.1">
+  <title>Dan的博客</title>
+  <link href="test styles/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+  <script src="test scripts/main.js"></script>
+</head>
+
+<body>
+  <header class="topMenu">
+    <div class="headerTitle">
+      <h1>
+        <a class="internalHref headHref mainPageHref" href="file:///X:/CODE/WEB/blog/index.html" title="前往首页">博客首页</a>
+      </h1>
+      <!-- <p class="logoSaying">
+                    "Take it easy."
+                </p> -->
+    </div>
+    <div class="headerMain">
+      <nav class="topNav">
+        <ul>
+          <li><a href="file:///X:/CODE/WEB/blog/intro.html" class="internalHref headHref">个人简介</a></li>
+          <li><a href="file:///X:/CODE/WEB/blog/content/studyExperience/experience.html"
+              class="internalHref headHref">学习历程</a></li>
+          <li><a href="file:///X:/CODE/WEB/blog/content/tech/contentIntro.html" class="internalHref headHref">技术分享</a>
+          </li>
+          <li><a href="file:///X:/CODE/WEB/blog/content/messageBoard/board.html" class="internalHref headHref">留言板</a>
+          </li>
+          <li><a href="file:///X:/CODE/WEB/blog/content/test pages/index.html" class="internalHref headHref">测试模块</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="search">
+        <input type="search" name="q" placeholder="要搜索的内容">
+        <input type="submit" value="搜索">
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <!-- 网页主体内容 -->
+    <div class="mainArticle">
+      <article class="enrty">
+        <h1>表单样例：注册表</h1>
+        <form action="demo.php">
+          <table class="register-form">
+            <thead>
+              <tr>
+                <th colspan="2">新用户注册（* 为必填内容）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="form-item">* 用户名：</td>
+                <td class="usr-input"><input type="text" name="username" placeholder="请输入用户名" maxlength="12"></td>
+              </tr>
+              <tr>
+                <td class="form-item">* 密码：</td>
+                <td class="usr-input"><input type="password" name="pwd" value="" maxlength="12">（必须包含字母，数字和特殊字符）
+                </td>
+              </tr>
+              <tr>
+                <td class="form-item">* 手机号码：</td>
+                <td class="usr-input"><input type="text" value="" maxlength="12">+86 <input type="button" value="发送验证码">
+                </td>
+              </tr>
+              <tr>
+                <td class="form-item">* 短信验证码：</td>
+                <td class="usr-input"><input type="text" maxlength="6"> <input type="button" value="立刻验证">
+                </td>
+              </tr>
+              <!-- 通过设置相同的name可以实现radio多选一的限制 -->
+              <!-- 单选和复选框可以选择默认值checked -->
+              <!-- input中的id属性要和label中的for属性相同才能实现 -->
+              <tr>
+                <td class="form-item">性别：</td>
+                <td class="usr-input"><input type="radio" name="gender" value="male" id="male"><label
+                    for="male">男</label>
+                  <input type="radio" name="gender" value="female" id="female"><label for="female">女</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="form-item">籍贯：</td>
+                <td class="usr-input"><select name="" id="">
+                    <option value="null" selected>—选择省份—</option>
+                    <option value="">浙江</option>
+                    <option value="">江苏</option>
+                    <option value="">上海</option>
+                    <option value="">福建</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <td class="form-item">生日：</td>
+                <td class="usr-input"><select name="" id="">
+                    <option value="null" selected>—选择年—</option>
+                    <option value="">1996</option>
+                    <option value="">1997</option>
+                    <option value="">1998</option>
+                    <option value="">1999</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                  </select> 年
+                  <select name="" id="">
+                    <option value="null" selected>—选择月—</option>
+                    <option value="">12</option>
+                    <option value="">11</option>
+                    <option value="">10</option>
+                    <option value="">9</option>
+                    <option value="">8</option>
+                    <option value="">7</option>
+                    <option value="">6</option>
+                    <option value="">5</option>
+                  </select> 月
+                  <select name="" id="">
+                    <option value="null" selected>—选择日—</option>
+                    <option value="">12</option>
+                    <option value="">11</option>
+                    <option value="">10</option>
+                    <option value="">9</option>
+                    <option value="">8</option>
+                    <option value="">7</option>
+                    <option value="">6</option>
+                    <option value="">5</option>
+                  </select> 日
+                </td>
+
+              <tr>
+                <td class="form-item">上传头像：</td>
+                <td class="usr-input"><input type="file"></td>
+              </tr>
+              <tr>
+                <td class="form-item">个人简介：</td>
+                <td class="usr-input">
+                  <textarea name="" id="" cols="30" rows="4"></textarea>
+                </td>
+              </tr>
+              <tr class="center-text">
+                <td></td>
+                <td class="usr-input">
+                  <input type="checkbox" name="security policy" value="agree" checked>我同意<a href="#"
+                    class="internalHref">网站注册协议</a>和<a href="#" class="internalHref">用户安全协议</a>
+                </td>
+              </tr>
+              <tr class="center-text">
+                <td colspan="2" style="border-top: 10px;">
+                  <input type="submit" value="立刻注册">
+                  <input type="reset" value="重新填写">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </article>
+      <hr>
+      </article>
+      <hr>
+    </div>
+    <div class="sidebar">
+      <aside>
+        <!-- 侧边栏在主内容右侧 -->
+        <h2>相关链接</h2>
+        <ul>
+          <li><a href="https://user.qzone.qq.com/862086864" target="_blank">我的QQ空间</a></li>
+          <li><a href="#" target="_blank">不只是一个程序员</a></li>
+          <!-- 侧边栏有n个超链接，略略略…… -->
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <!-- 本站所有网页的统一页脚 -->
+    <p>Dan blog 版权所有 Copyright © 2050 Daniel, All Rights Reserve</p>
+  </footer>
+</body>
+
+</html>
